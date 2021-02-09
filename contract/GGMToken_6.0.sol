@@ -1,12 +1,12 @@
 pragma solidity 0.6.6;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// 'SeaDogeToken' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
-// Total supply: 100000000
+// Deployed to : 0x9FfF3F7192eFc6A5736eE9636D1D616EEfB09962
+// Symbol      : DOGSEA
+// Name        : SeaDogeToken
+// Total supply: 10000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract SeaDogeToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "CCM";
-        name = "CCMToken";
-        decimals = 0;
-        _totalSupply = 100000000;
-        balances[0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58] = _totalSupply;
-        emit Transfer(address(0), 0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58, _totalSupply);
+        symbol = "DOGSEA";
+        name = "SeaDogeTokenn";
+        decimals = 18;
+        _totalSupply = 10000000;
+        balances[0x9FfF3F7192eFc6A5736eE9636D1D616EEfB09962] = _totalSupply;
+        emit Transfer(address(0), 0x9FfF3F7192eFc6A5736eE9636D1D616EEfB09962, _totalSupply);
     }
 
 
